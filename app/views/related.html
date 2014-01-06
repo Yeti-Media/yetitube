@@ -1,0 +1,10 @@
+<div class="video_list search">
+  <ul>
+    <li data-ng-repeat="video in relatedVideos.items">
+      <a data-ng-click="pickVideo(video)">
+        <img data-ng-src="{{video.snippet.thumbnails.default.url}}"/>
+        <p data-ng-bind="video.snippet.title"></p>
+      </a>
+    </li>
+  </ul>
+</div>
